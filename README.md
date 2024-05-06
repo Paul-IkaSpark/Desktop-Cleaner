@@ -1,3 +1,6 @@
+
+![Example](https://github.com/Paul-IkaSpark/Desktop-Cleaner/blob/main/example/example.jpg)
+
 # Desktop Cleaner
 
 Desktop Cleaner is a Python application designed to organize and tidy up your desktop by moving files from one folder to another. It provides a user-friendly interface for selecting source and destination folders, and it can be customized to run periodically in the background.
