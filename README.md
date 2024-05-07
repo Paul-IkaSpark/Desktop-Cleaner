@@ -11,6 +11,7 @@ Desktop Cleaner is a Python application designed to organize and tidy up your de
 - Simple and intuitive user interface.
 - Customizable settings for source and destination folders.
 - Periodic file moving functionality.
+- Ability to rename similar files to avoid overwriting.
 
 ![Example](https://github.com/Paul-IkaSpark/Desktop-Cleaner/blob/main/example/example.jpg)
 
@@ -32,3 +33,5 @@ Desktop Cleaner is a Python application designed to organize and tidy up your de
 
 - Python 3.x
 - Required Python packages listed in `requirements.txt`
+
+With Desktop Cleaner, organizing your files has never been easier. Download now and streamline your file management process!
