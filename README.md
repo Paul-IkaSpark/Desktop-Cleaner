@@ -14,6 +14,12 @@ Desktop Cleaner is a Python application designed to organize and tidy up your de
 
 ![Example](https://github.com/Paul-IkaSpark/Desktop-Cleaner/blob/main/example/example.jpg)
 
+## Installation
+
+1. Clone this repository to your local machine.
+2. Install Python if you haven't already.
+3. Install required dependencies using `pip install -r requirements.txt`.
+
 ## Usage
 
 1. Run the `desktop_cleaner.py` script.
@@ -25,3 +31,4 @@ Desktop Cleaner is a Python application designed to organize and tidy up your de
 ## Requirements
 
 - Python 3.x
+- Required Python packages listed in `requirements.txt`
