@@ -1,5 +1,5 @@
 
-![Example](https://github.com/Paul-IkaSpark/Desktop-Cleaner/blob/main/example/example.jpg)
+![Example](https://github.com/Paul-IkaSpark/Desktop-Cleaner/blob/main/example/example.png)
 
 # Desktop Cleaner
 
