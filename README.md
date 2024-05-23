@@ -23,7 +23,7 @@ Desktop Cleaner is a Python application designed to organize and tidy up your de
 
 ## Usage
 
-1. Run the `desktop_cleaner.py` script.
+1. Run the `desktop_cleaner.py` script or `desktop_cleaner_run_in_system_tray.cmd` if you prefer to run in system tray without console.
 2. Go to the system tray and open "Settings."
 3. Select source and destination folders.
 4. Click "Start" to begin moving files.
