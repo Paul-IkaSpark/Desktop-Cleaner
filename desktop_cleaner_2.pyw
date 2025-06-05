@@ -35,6 +35,7 @@ move_to_path = ""
 
 # Флаги для вывода информации в консоль
 log_flag = True
+periodic_thread = None
 
 def save_settings():
     settings = {
@@ -194,8 +195,10 @@ def start_program(from_path, to_path, parent):
     if move_from_path and move_to_path:
         # Запускаем поток для периодического перемещения файлов,
         # только если он еще не был запущен
-        if not threading.enumerate():
-            threading.Thread(target=periodic_move_files).start()
+        global periodic_thread
+        if periodic_thread is None or not periodic_thread.is_alive():
+            periodic_thread = threading.Thread(target=periodic_move_files, daemon=True)
+            periodic_thread.start()
         # Теперь после установки путей вызываем move_files() для первоначального перемещения файлов
         move_files()
         parent.destroy()
@@ -246,5 +249,6 @@ def create_icon():
 
 # Проверяем, вызывается ли функция show_folder_selection_window() только при запуске скрипта напрямую
 if __name__ == "__main__":
-    threading.Thread(target=periodic_move_files).start()  # Запускаем поток периодического перемещения файлов
+    periodic_thread = threading.Thread(target=periodic_move_files, daemon=True)
+    periodic_thread.start()  # Запускаем поток периодического перемещения файлов
     show_main_window()  # Отображаем основное окно
